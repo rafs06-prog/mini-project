@@ -165,7 +165,7 @@ letter-spacing: 0.1px;
   color: #64748b
 }
  
-.button {
+button {
   background-color: #c231c2;
   width: 95%;
   color: white;
@@ -186,7 +186,9 @@ SOCIAL
 */
 
 #about,
-#social {
+#social,
+#contact,
+#footer {
   padding: 24px 0;
   width: 100%;
   max-width: 1200px;
@@ -245,3 +247,120 @@ padding: 0 24px;
   line-height: 1.5;
   margin-bottom: 24px;
 }
+
+/* 
+
+CONTACT
+
+
+*/
+
+.section__card--contact {
+  border: 1.5px dashed #c231c2;
+  width: 96%;
+  border-radius: 16px;
+}
+
+form {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0 24px;
+  gap: 12px
+}
+
+input, textarea {
+  margin-bottom: 24px;
+  font-size: 20px;
+  padding: 6px 12px;
+  width: 500px;
+  border-radius: 6px;
+}
+
+/*
+
+FOOTER
+
+*/
+
+footer {
+  background-color: #badcee;
+display: flex;
+flex-direction: column;
+align-items: center;
+border-top: 1.5px dashed #cbd5e1;
+padding: 12px 20px;
+border-radius: 20% 20% 0 0;
+}
+
+.foote__logo{
+  margin-bottom: 8px;
+}
+
+.footer__links {
+  margin-bottom: 16px;
+}
+
+.footer__link{
+  padding: 0 16px;
+}
+
+/* 
+
+RESPONSIVENESS
+
+*/
+
+/*
+
+SMALLER SCREEN
+
+*/
+
+@media(max-width: 1024px){
+  .section__description--para {
+    font-size: 20px;
+
+  }
+}
+
+@media (max-width: 768px) {
+a {
+  font-size: 16px;
+  }
+  .course {
+    gap: 4px;
+  }
+  .course__title {
+    margin-left: 0px;
+    font-size: 48px;
+  }
+  .hero {
+    flex-direction: column;
+  }
+  .hero__img--wrapper {
+    max-width: 500px;
+  }
+
+  .hero__description{
+    margin-left: 0;
+
+  }
+  h1 {
+    font-size:40px;
+    
+  }
+  .section__description {
+    flex-direction: column;
+  }
+  .section__description--wrapper{
+    width: 100%;
+  }
+  input, textarea {
+    width: 400px;
+    
+  }
+}
+
